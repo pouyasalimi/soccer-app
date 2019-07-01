@@ -1,0 +1,129 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+.full-height {
+    min-height: 550px;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+
+.picture {
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #ccc;
+}
+.picture .img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+.picture:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: 3px solid transparent;
+    transition: all ease 0.3s;
+}
+
+.picture:hover:after {
+    border: 3px solid #74b1ff;
+}
+
+.picture:hover .change-icon {
+    color: #74b1ff;
+}
+
+.picture .change-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-shadow: 0 0 10px black;
+    font-size: 2rem;
+    transition: color ease 0.3s;
+}
+
+.picture input[type="file"] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 200px;
+}
+
+.bg-custom {
+    background-color: #4a8446;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-brand {
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+.footer p {
+    padding: 0;
+    margin: 0;
+}
