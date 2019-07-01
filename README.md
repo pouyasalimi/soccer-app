@@ -3,7 +3,7 @@ Simple Laravel VueJs App
 
 ## Installation
 
-please run the following commands before start:
+Please run the following commands before start:
 
 composer install
 
@@ -19,7 +19,7 @@ npm run prod
 
 php artisan serv
 
-##Tests:
+## Tests:
 
 This app use Dusk for testing app over browser, run the following commands to do Tests.
 
